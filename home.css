@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*--------- Navigation Bar-------------*/
+.navbar {
+    background-color: rgb(157, 182, 233);
+    overflow: hidden;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    flex: 1;
+}
+
+.nav-links li a {
+    display: block;
+    text-align: center;
+    padding: 22px 16px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-links li a:hover {
+    background-color: rgb(188, 202, 231);
+}
+
+img{
+    width: 17px;
+    height: 17px;
+}
+
+.date{
+    text-align: right;
+    position: relative;
+    right: 50px;
+    top: 20px;
+}
+
+/*------------------------- Grid -----------------------------*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin: 50px;
+    justify-items: center;
+}
+
+.marble {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 350px;
+    height: 150px;
+    border: 12px solid rgb(188, 202, 231);
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 14px;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="loginBox">
+        <form id="welcomeForm" onsubmit="submitForm(event)">
+            <h2>Welcome Students, Let us know you</h2>
+            Name <input type="text" id="name" name="name" placeholder="Enter your name" required> <br>
+            Email <input type="email" id="email" name="email" placeholder="Enter your email" required> <br>
+            <input type="submit" value="Proceed">
+            <input type="submit" value="Cancel" onclick="resetForm()">
+        </form>
+    </div>
+</body>
+</html>
