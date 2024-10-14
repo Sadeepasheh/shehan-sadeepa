@@ -66,6 +66,13 @@ img{
     width: 350px;
     height: 150px;
     border: 12px solid rgb(188, 202, 231);
+    transition: 0.2s;
+}
+.marble:hover{
+    background-color: rgb(188, 202, 231);
+    width: 340px;
+    height: 140px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
 }
 
 h3 {
