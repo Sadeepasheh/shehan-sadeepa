@@ -32,3 +32,26 @@ document.addEventListener("DOMContentLoaded", function() {
     welcomeMessage.textContent = `Welcome ${params.name} (${params.email})`;
     document.querySelector('.date').appendChild(welcomeMessage);
 });
+
+//---------- Function to display the current time ----------------
+function displayClock() {
+    const clockElement = document.getElementById('clock');
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    
+    const currentTime = `${hours}:${minutes}:${seconds}`;
+    clockElement.textContent = currentTime;
+}
+
+setInterval(displayClock, 1000);
+
+function displayDate() {
+    const dateElement = document.getElementById('date-display');
+    const now = new Date();
+    const dateString = now.toDateString();
+    dateElement.textContent = dateString;
+}
+
+displayDate();
